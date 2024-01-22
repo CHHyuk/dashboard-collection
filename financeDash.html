@@ -95,7 +95,7 @@
           </div>
           <span class="card--detail">**** **** **** 7937</span>
         </div>
-        
+
         <div class="payment--card light-purple">
           <div class="card--header">
             <div class="amount">
@@ -157,62 +157,85 @@
               <th>Status</th>
               <th>Action</th>
             </tr>
-            <tbody>
-              <tr>
-                <td>
-                  2024-01-17
-                </td>
-                <td>Expenses</td>
-                <td>Office Supplies</td>
-                <td>$250</td>
-                <td>Office Expenses</td>
-                <td>Pending</td>
-                <td><button>Edit</button></td>
-              </tr>
-              <tr>
-                <td>
-                  2024-01-18
-                </td>
-                <td>Expenses</td>
-                <td>Office Supplies</td>
-                <td>$250</td>
-                <td>Office Expenses</td>
-                <td>Pending</td>
-                <td><button>Edit</button></td>
-              </tr>
-              <tr>
-                <td>
-                  2024-01-19
-                </td>
-                <td>Expenses</td>
-                <td>Office Supplies</td>
-                <td>$250</td>
-                <td>Office Expenses</td>
-                <td>Pending</td>
-                <td><button>Edit</button></td>
-              </tr>
-              <tr>
-                <td>
-                  2024-01-20
-                </td>
-                <td>Expenses</td>
-                <td>Office Supplies</td>
-                <td>$250</td>
-                <td>Office Expenses</td>
-                <td>Pending</td>
-                <td><button>Edit</button></td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="7">Total: $1,000</td>
-              </tr>
-            </tfoot>
+          <tbody>
+            <tr>
+              <td>
+                2024-01-17
+              </td>
+              <td>Expenses</td>
+              <td>Office Supplies</td>
+              <td>$250</td>
+              <td>Office Expenses</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+            <tr>
+              <td>
+                2024-01-18
+              </td>
+              <td>Expenses</td>
+              <td>Office Supplies</td>
+              <td>$250</td>
+              <td>Office Expenses</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+            <tr>
+              <td>
+                2024-01-19
+              </td>
+              <td>Expenses</td>
+              <td>Office Supplies</td>
+              <td>$250</td>
+              <td>Office Expenses</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+            <tr>
+              <td>
+                2024-01-20
+              </td>
+              <td>Expenses</td>
+              <td>Office Supplies</td>
+              <td>$250</td>
+              <td>Office Expenses</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">Total: $1,000</td>
+            </tr>
+          </tfoot>
           </thead>
         </table>
       </div>
     </div>
   </div>
+
+  <div class="floating-icon" id="toggle-button">
+    <i class="fa-solid fa-bars"></i>
+    <div class="popup-menu" id="popup-menu">
+      <ul>
+        <li><a href="financeDash.html">finance dashboard</a></li>
+        <li><a href="studyDash.html">studying dashboard</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('toggle-button').addEventListener('click', function () {
+        let menu = document.getElementById('popup-menu');
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
